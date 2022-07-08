@@ -110,7 +110,7 @@ async function renderWeatherAsync(City) {
     temperature.innerHTML = "";
     WeatherType.innerHTML = "";
     weatherIcon.innerHTML =
-      '<lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_tzxtv5wy.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:0 auto;" loop  autoplay></lottie-player>';
+      '<lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_tzxtv5wy.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px; margin:0 auto;" loop  autoplay></lottie-player>';
     date.innerHTML = "";
     infoButton.disabled = true;
     if (lang.innerHTML.toLowerCase() === "en") {
@@ -165,8 +165,8 @@ function showWeatherInfo(weather) {
   assets.forEach((item) => {
     if (weather.weather[0].main === item.id) {
       isLightMode
-        ? (weatherIcon.innerHTML = `<lottie-player src="${item.icon_day}"  background="transparent"  speed="1"  style="width: 200px; height: 200px; margin: 0 auto"  loop  autoplay></lottie-player>`)
-        : (weatherIcon.innerHTML = `<lottie-player src="${item.icon_night}"  background="transparent"  speed="1"  style="width: 200px; height: 200px; margin: 0 auto"  loop  autoplay></lottie-player>`);
+        ? (weatherIcon.innerHTML = `<lottie-player src="${item.icon_day}"  background="transparent"  speed="1"  style="width: 150px; height: 150px; margin: 0 auto"  loop  autoplay></lottie-player>`)
+        : (weatherIcon.innerHTML = `<lottie-player src="${item.icon_night}"  background="transparent"  speed="1"  style="width: 150px; height: 150px; margin: 0 auto"  loop  autoplay></lottie-player>`);
       cloud1.innerHTML = `<lottie-player
       src="${item.cloud}"
       background="transparent"
