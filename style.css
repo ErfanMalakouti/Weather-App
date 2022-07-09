@@ -107,7 +107,7 @@ body {
 }
 .stars {
   box-shadow: 0 0 10px whitesmoke;
-  opacity: 1;
+  opacity: 0;
   animation: wink 2s infinite alternate;
 }
 .wrapper > div:nth-child(1) {
